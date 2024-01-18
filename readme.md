@@ -33,11 +33,13 @@ API'S Present:
 2. /transaction/management/transactions – To list all transaction and list transaction on specified date or date range in 2 different currencies.
 
 1. /transaction/management/transaction/create--Request Body parameters and example --
- {
+{
+
     "transactionType": "Debit",
     "transactionMoney": Double value---Amount of Money needs To be debitted or credited,
     "reasonOfTransaction": String -- Reason of Transaction,
     "currencyType":INR/USD currency in which you will be doing Transaction
+   
  }
 
 2./transaction/management/transactions-- Request Body parameters and example
