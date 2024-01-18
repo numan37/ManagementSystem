@@ -36,6 +36,8 @@ public class TransactionServiceImpl implements TransactionService {
 					transactions= transactionDAO.transactionsOnDate(requestWSE.getDateOfTransaction());
 				} else if(requestWSE.getStartDateOfTransaction()!=null &&requestWSE.getEndDateOfTransaction()!=null) {
 					transactions= transactionDAO.transactionsBetweenDate(requestWSE.getStartDateOfTransaction(), requestWSE.getEndDateOfTransaction());
+				} else {
+					transactions=transactionDAO.findAll();
 				}
 			}
 		}
@@ -56,11 +58,6 @@ public class TransactionServiceImpl implements TransactionService {
 		}
 		return transactions;
 		
-	}
-
-	@Override
-	public Transaction findById(Long id) {
-		return transactionDAO.getReferenceById(id);
 	}
 
 	@Override
