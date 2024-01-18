@@ -26,6 +26,11 @@ CREATE TABLE IF NOT EXISTS public.mtransaction
     CONSTRAINT "TRANSACTION_pkey" PRIMARY KEY (record_id)
 )
 
-API'S Used:
+API'S Present:
+
+1. /transaction/management/transaction/create  -for creating the new transaction with 2 different currencies INR and USD depending upon the RequestBody parameters
+
+2. /transaction/management/transactions – To list all transaction and list transaction on specified date or date range in 2 different currencies.
+
 
 
