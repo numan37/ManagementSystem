@@ -2,7 +2,7 @@ package com.transaction.management.commons;
 
 public class CommonConstants {
 	
-	public static final String INDCurrency="IND";
+	public static final String INDCurrency="INR";
 	
 	public static final String USACurrency="USD";
 	
