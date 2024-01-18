@@ -39,10 +39,6 @@ public class TransactionController {
 		}
 	}
 
-	@GetMapping("/transaction/{id}")
-	public Transaction findById(@PathVariable int id) {
-		return transactionService.findById(Long.valueOf(id));
-	}
 
 	@PostMapping("/transaction/create")
 	public ResponseEntity<Object> createUser(@RequestBody Transaction transaction) {
