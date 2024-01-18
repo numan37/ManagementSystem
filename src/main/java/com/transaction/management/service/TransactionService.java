@@ -13,7 +13,5 @@ public interface TransactionService {
 	
 	public List<Transaction> findAll(RequestWSE requestWSE) throws JSONException, InterruptedException, IOException;
 	
-	public Transaction findById(Long id);
-	
 	public Transaction createUser(Transaction user) throws Exception;
 }
