@@ -33,12 +33,22 @@ API'S Present:
 2. /transaction/management/transactions – To list all transaction and list transaction on specified date or date range in 2 different currencies.
 
 1. /transaction/management/transaction/create--Request Body parameters and example --
-   {
+ {
     "transactionType": "Debit",
     "transactionMoney": Double value---Amount of Money needs To be debitted or credited,
     "reasonOfTransaction": String -- Reason of Transaction,
     "currencyType":INR/USD currency in which you will be doing Transaction
+ }
+
+2./transaction/management/transactions-- Request Body parameters and example
+{
+    "requestListType":String should be "1"/"2" to determine will it be listing all transaction or some filters will be applied. Here 1 denotes defualt Listing and 2 Filter Listing This will be compulsory parameter to get listing else you will be getting empty list,
+    "dateOfTransaction":Date in YYYY-MM-DD Format. This is optional and will be used to get list of all transaction on this particular Day Format must be followed,
+	"startDateOfTransaction":Date in YYYY-MM-DD Format. This is optional and will be used to get list of all transaction on this from this Day To below end Date Format must be followed,
+    "endDateOfTransaction":Date in YYYY-MM-DD Format. This is optional and will be used to get list of all transaction on this from above strat date To this end Date Format must be followed,
+	"currencyType": INR/USD currency in which you will be viewing the transactions.
 }
+Here while Doing the transaction if money is sent in INR will be saved to DB in same value and if it is sent in USD will be converted to USD at that instance and  will be saved to DB while retriving will be converting this INR to USD if user wants to view in USD and will be representing the currency value at that instant of retriving and the value at the time of appeninding
 
 
 
