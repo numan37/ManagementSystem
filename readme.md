@@ -33,6 +33,7 @@ API'S Present:
 2. /transaction/management/transactions – To list all transaction and list transaction on specified date or date range in 2 different currencies.
 
 1. /transaction/management/transaction/create--Request Body parameters and example --
+   
 {
 
     "transactionType": "Debit"/"Credit depending upon type of transaction,
