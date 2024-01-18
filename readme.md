@@ -26,3 +26,6 @@ CREATE TABLE IF NOT EXISTS public.mtransaction
     CONSTRAINT "TRANSACTION_pkey" PRIMARY KEY (record_id)
 )
 
+API'S Used:
+
+
