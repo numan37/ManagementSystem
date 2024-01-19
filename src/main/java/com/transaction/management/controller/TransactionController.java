@@ -29,7 +29,7 @@ public class TransactionController {
 	@Autowired
 	private TransactionService transactionService;
 
-	@GetMapping("/transactions")
+	@PostMapping("/transactions")
 	public List<Transaction> findAll(@RequestBody(required = false) RequestWSE requestWSE) {
 		try {
 			return transactionService.findAll(requestWSE);
