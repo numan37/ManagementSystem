@@ -32,8 +32,9 @@ API'S Present:
 
 2. /base/transaction/management/transactions – To list all transaction and list transaction on specified date or date range in 2 different currencies.
    
+API'S Explaination:
 
-1. /base/transaction/management/transaction/create--Request Body parameters and example --
+1. /base/transaction/management/transaction/create--Post Method--Request Body parameters and example --
    
 {
 
@@ -47,7 +48,7 @@ API'S Present:
    
  }
 
-2. /base/transaction/management/transactions-- Request Body parameters and example
+2. /base/transaction/management/transactions--Post Method-- Request Body parameters and example
 
 {
 
