@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<style type="text/css">
+    		.blc{
+    		display:block;
+    		}
+    	</style>
+    </head>
+    <body>
+    <h1>The New Transaction</h1>
+    <div>
+    	<label for="transactionType">Type of Transaction(Debit or Credit:)</label>
+
+		<select name="transactionType" id="transactionType">
+		  <option value="Debit">Debit</option>
+		  <option value="Credit">Credit</option>
+		</select>
+    </div>
+    <div>
+    	<label for="currency">Choose a Currency:</label>
+
+		<select name="currency" id="currency">
+		  <option value="INR">INR</option>
+		  <option value="USD">USD</option>
+		</select>
+    </div>
+    <div class="blc">
+    	<label>Rupees : </label>
+    	<input type="text" id="rupeesField" />
+    </div>
+    <div class="blc">
+    	<label>Reason For Transaction : </label>
+    	<input type="text" id="reasonforTrans" maxlength="5000" />
+    </div>
+    <button onclick=submitData() class="blc">Submit</button>
+    <button onclick=navigateToHome() class="blc">Back To Home</button>
+    </body>
+    <script type="text/javascript" src="js/common.js"></script>
+</html>
