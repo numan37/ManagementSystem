@@ -21,7 +21,7 @@ import com.transaction.management.entity.Transaction;
 import com.transaction.management.service.TransactionService;
 import com.transaction.management.web.RequestWSE;
 
-@CrossOrigin
+
 @RestController
 @RequestMapping("/transaction/management")
 public class TransactionController {
