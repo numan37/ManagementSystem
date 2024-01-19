@@ -66,5 +66,15 @@ API'S Explaination:
 
 Here while Doing the transaction if money is sent in INR will be saved to DB in same value and if it is sent in USD will be converted to USD at that instance and  will be saved to DB while retriving will be converting this INR to USD if user wants to view in USD and will be representing the currency value at that instant of retriving and the value at the time of appeninding
 
+Application.properties
 
+server.port=Tomcat Port
+
+spring.datasource.url= jdbc:postgresql://localhost:5432/Your Database
+
+spring.datasource.username=postgres  ---username of database
+
+spring.datasource.password=1234 ---password of database
+
+server.servlet.context-path=/base  -- the base path to launch the application
 
