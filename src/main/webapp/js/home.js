@@ -1,8 +1,8 @@
-sendToServer()
+
 function sendToServer() {
 	var JSONObject = [],obj = {};
 	obj.requestListType='1'
-	obj.currencyType='IND'
+	obj.currencyType='INR'
 	var arr1 = JSON.stringify(obj)
 	var arr = JSON.stringify(obj).substring(1, JSON.stringify(JSONObject).length - 1);
 	var gsonObj = "{obj:" + arr1 + "}";
@@ -18,4 +18,12 @@ function sendToServer() {
 	xmlHttp.setRequestHeader("Content-type","application/json");
 	xmlHttp.setRequestHeader("type", "RequestWSE");
 	xmlHttp.send(arr1)
+}
+
+function navigateToNew(){
+	window.location.href ="newTransaction.html"
+}
+
+function navigateToListing(){
+	window.location.href ="TransactionsListing.html"
 }

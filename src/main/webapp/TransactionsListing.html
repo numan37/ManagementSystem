@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<style type="text/css">
+    		.blc{
+    		display:block;
+    		}
+    	</style>
+    </head>
+    <body>
+    <h1>Transaction Listing</h1>
+    <div  class="blc">
+    <div>
+    	<label for="currency">Choose a Currency:</label>
+
+		<select name="currency" id="currencyInListing" onchange="onTabChange()">
+		  <option value="INR">INR</option>
+		  <option value="USD">USD</option>
+		</select>
+    </div>
+    <button onclick=navigateToHome()>Back To Home</button>
+    <button onclick=unhideTab()>Search Based upon Specified Date</button>
+    <span id="inputDateField"  style="display:none;text-align:center;font-weight:bold;font-size:25px;color:gray;margin-top:25%;width:100%;">
+		<input type="date" id="dateOfTransaction">
+		<button onclick=searchBasedOnDate()>Search</button>
+	</span>
+    </div>
+    <span id="noRecordsDiv"  style="display:none;text-align:center;font-weight:bold;font-size:25px;color:gray;margin-top:25%;width:100%;">No records found</span>
+    <div id="list">
+    <table id="results">
+    </table>
+    </div>
+    </body>
+    <script type="text/javascript" src="js/TransactionsListing.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</html>
