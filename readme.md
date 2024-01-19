@@ -31,6 +31,7 @@ API'S Present:
 1. /base/transaction/management/transaction/create  -for creating the new transaction with 2 different currencies INR and USD depending upon the RequestBody parameters
 
 2. /base/transaction/management/transactions – To list all transaction and list transaction on specified date or date range in 2 different currencies.
+   
 
 1. /base/transaction/management/transaction/create--Request Body parameters and example --
    
